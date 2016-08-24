@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Kodi Media Center
+Comment=This session will start Kodi Media Center
+Exec=kodi -fs
+Icon=kodi
+Terminal=false
+Type=Application

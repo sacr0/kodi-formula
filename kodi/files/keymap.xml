@@ -1,0 +1,188 @@
+<!--/home/pi/.xbmc/userdata/keymaps/remote.xml-->
+<!--Configurationfilefordrivingrpi-cecd-->
+<!--
+
+URL: http://wiki.xbmc.org/index.php?title=Keyboard.xml#Actions
+URL: http://wiki.xbmc.org/index.php?title=Opening_Windows_and_Dialogs
+
+BasedonfollowingmappingsofCECbuttonstoXBMCcommands:-
+
+CEC_User_Control_Select,"select"
+CEC_User_Control_Up,"up"
+CEC_User_Control_Down,"down"
+CEC_User_Control_Left,"left"
+CEC_User_Control_Right,"right"
+CEC_User_Control_Exit,"title"
+CEC_User_Control_F2Red,"red"
+CEC_User_Control_F3Green,"green"
+CEC_User_Control_F4Yellow,"yellow"
+CEC_User_Control_F1Blue,"blue"
+0x91,false,xbmc_key,"back"
+CEC_User_Control_Number1,"one"
+CEC_User_Control_Number2,"two"
+CEC_User_Control_Number3,"three"
+CEC_User_Control_Number4,"four"
+CEC_User_Control_Number5,"five"
+CEC_User_Control_Number6,"six"
+CEC_User_Control_Number7,"seven"
+CEC_User_Control_Number8,"eight"
+CEC_User_Control_Number9,"nine"
+CEC_User_Control_Number0,"zero"
+CEC_User_Control_Play,"play"
+CEC_User_Control_Pause,"pause"
+CEC_User_Control_Stop,"stop"
+CEC_User_Control_Rewind,"skipminus"
+CEC_User_Control_FastForward,"skipplus"
+CEC_User_Control_RootMenu,"previousmenu"
+CEC_User_Control_SetupMenu,"title"
+CEC_User_Control_Info,"title"
+
+Mijn situatie bij samsung remote:
+   <title> == terug knopje
+   <previousmenu> == geen idee....
+   <back> == exit knopje
+
+de back key kan weggehaald worden gezien ik nu alleen onkyo remote gebruik
+-->
+<keymap>
+ <global>
+  <remote>
+   <left>Left</left>
+   <right>Right</right>
+   <up>Up</up>
+   <down>Down</down>
+   <select>Select</select>
+   <red>ContextMenu</red>
+   <green>info</green>
+   <yellow>Mute</yellow>
+   <blue>togglefullscreen</blue>
+   <!--blue>Fullscreen</blue-->
+   <back>Back</back>
+  </remote>
+ </global>
+ <!--VIDEOS-->
+ <FullscreenVideo>
+  <remote>
+   <select>OSD</select>
+   <skipplus>FastForward</skipplus>
+   <skipminus>Rewind</skipminus>
+   <left>StepBack</left>
+   <right>StepForward</right>
+   <up>BigStepForward</up>
+   <down>BigStepBack</down>
+   <red>Info</red>
+   <green>AudioNextLanguage</green>
+   <yellow>NextSubtitle</yellow>
+   <!--blue>RunScript(script.xbmc.subtitles)</blue-->
+   <blue>ActivateWindow(SubtitleSearch)</blue>
+   <back>Stop</back>
+  </remote>
+ </FullscreenVideo>
+ <VideoOSD>
+  <remote>
+   <red>CodecInfo</red>
+   <green>Info</green>
+   <yellow>Info</yellow>
+   <blue>Info</blue>
+  </remote>
+ </VideoOSD>
+<MyVideos>
+  <remote>
+   <blue>ToggleWatched</blue>
+  </remote>
+</MyVideos>
+ <MyVideoPlaylist>
+  <remote>
+   <red>MoveItemUp</red>
+   <green>MoveItemDown</green>
+   <yellow>Delete</yellow>
+   <blue>ToggleWatched</blue>
+  </remote>
+ </MyVideoPlaylist>
+ <!--MUSIC-->
+ <Visualisation>
+  <remote>
+   <skipplus>SkipNext</skipplus>
+   <skipminus>SkipPrevious</skipminus>
+   <left>Rewind</left>
+   <right>FastForward</right>
+   <up>IncreaseRating</up>
+   <down>DecreaseRating</down>
+   <red>Info</red>
+   <green>CodecInfo</green>
+   <yellow>ActivateWindow(MusicPlaylist)</yellow>
+   <blue>FullScreen</blue>
+   <select>ActivateWindow(MusicOSD)</select>
+  </remote>
+ </Visualisation>
+ <MusicOSD>
+  <remote>
+   <skipplus>SkipNext</skipplus>
+   <skipminus>SkipPrevious</skipminus>
+   <red>Info</red>
+   <green>Info</green>
+   <yellow>Info</yellow>
+   <blue>Info</blue>
+  </remote>
+ </MusicOSD>
+ <MyMusicPlaylist>
+  <remote>
+   <red>MoveItemUp</red>
+   <green>MoveItemDown</green>
+   <yellow>Delete</yellow>
+   <blue>FullScreen</blue>
+  </remote>
+ </MyMusicPlaylist>
+ <MyMusicPlaylistEditor>
+  <remote>
+   <red>MoveItemUp</red>
+   <green>MoveItemDown</green>
+   <yellow>Delete</yellow>
+   <blue>FullScreen</blue>
+  </remote>
+ </MyMusicPlaylistEditor>
+ <MyMusicFiles>
+  <remote>
+   <skipplus>SkipNext</skipplus>
+   <skipminus>SkipPrevious</skipminus>
+   <yellow>Queue</yellow>
+   <blue>FullScreen</blue>
+  </remote>
+ </MyMusicFiles>
+ <MyMusicLibrary>
+  <remote>
+   <skipplus>SkipNext</skipplus>
+   <skipminus>SkipPrevious</skipminus>
+<!--   <left>SkipPrevious</left> -->
+<!--   <right>SkipNext</right> -->
+   <yellow>Queue</yellow>
+   <blue>FullScreen</blue>
+  </remote>
+ </MyMusicLibrary>
+ <!--PICTURES-->
+ <SlideShow>
+  <remote>
+   <zero>ZoomNormal</zero>
+   <one>ZoomLevel1</one>
+   <two>ZoomLevel2</two>
+   <three>ZoomLevel3</three>
+   <four>ZoomLevel4</four>
+   <five>ZoomLevel5</five>
+   <six>ZoomLevel6</six>
+   <seven>ZoomLevel7</seven>
+   <eight>ZoomLevel8</eight>
+   <nine>ZoomLevel9</nine>
+   <red>CodecInfo</red>
+   <green>Rotate</green>
+   <yellow>ZoomIn</yellow>
+   <blue>ZoomOut</blue>
+   <back>Stop</back>
+  </remote>
+ </SlideShow>
+ <MyPictures>
+  <remote>
+   <yellow>Playlist</yellow>
+   <blue>FullScreen</blue>
+  </remote>
+ </MyPictures>
+</keymap>

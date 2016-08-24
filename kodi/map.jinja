@@ -1,0 +1,13 @@
+{% set kodi = salt['grains.filter_by']({
+    'Debian': {
+        'pkgs': ['kodi'],
+    },
+    'RedHat': {
+        'pkgs': ['kodi'],
+    },
+	'Arch': {
+        'pkgs': ['kodi', 'bluez', 'libcec','libnfs','lirc','lsb-release','pulseaudio','udisks','unrar','unzip'],
+		'keymap_remote_location': '/home/arthur/.kodi/userdata/keymaps',
+		'keymap_remote_src': 'salt://kodi/files/keymap.xml',
+    },
+}, grain="os_family", merge=salt['pillar.get']('kodi:lookup')) %}
