@@ -1,5 +1,8 @@
 {% from "kodi/map.jinja" import kodi with context %}
 
+include:
+  - kodi
+
 #save keymap file for onkyo remote i have
 kodi_keymap:
   file.managed:
