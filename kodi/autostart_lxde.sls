@@ -9,3 +9,11 @@ kodi_autostart_config:
     - template: jinja
     - require:
       - sls: kodi
+
+kodi_extra_startmenu:
+  file.managed:
+    - name:  /usr/share/applications/Kodi_HDaudio.desktop 
+    - source: salt://kodi/files/kodi_startmenu.desktop 
+    - template: jinja
+    - require:
+      - sls: kodi
