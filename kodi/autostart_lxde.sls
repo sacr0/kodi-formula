@@ -12,7 +12,7 @@ kodi_autostart_config:
 
 kodi_extra_startmenu:
   file.managed:
-    - name:  /usr/share/applications/Kodi_HDaudio.desktop 
+    - name:  /usr/share/applications/kodi_HDaudio.desktop 
     - source: salt://kodi/files/kodi_startmenu.desktop 
     - template: jinja
     - require:
