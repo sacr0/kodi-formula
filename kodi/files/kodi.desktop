@@ -1,7 +1,0 @@
-[Desktop Entry]
-Name=Kodi Media Center
-Comment=This session will start Kodi Media Center
-Exec={{ salt['pillar.get']('kodi:desktop:exec', "kodi -fs") }} -fs
-Icon=kodi
-Terminal=false
-Type=Application
